@@ -20,13 +20,13 @@ class PuntosPorEquipo {
 	  int getGoles_Favor();
 	  int getGoles_Contra();
 	  int getPartidos_Ganados();
-	  int getPrtidos_Perdidos();
+	  int getPartidos_Perdidos();
 	  int getPartidos_Empatados();
-	  void getEquipo(Equipo*);
-	  void getGoles_Favor(int);
-	  void getGoles_Contra(int);
-	  void getPartidos_Ganados(int);
-	  void getPrtidos_Perdidos(int);
-	  void getPartidos_Empatados(int);
+	  void setEquipo(Equipo*);
+	  void setGoles_Favor(int);
+	  void setGoles_Contra(int);
+	  void setPartidos_Ganados(int);
+	  void setPartidos_Perdidos(int);
+	  void setPartidos_Empatados(int);
 };
 #endif

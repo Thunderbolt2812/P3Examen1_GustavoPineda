@@ -24,27 +24,27 @@ int PuntosPorEquipo::getGoles_Contra(){
 int PuntosPorEquipo::getPartidos_Ganados(){
 	return this->partidos_ganados;
 }
-int PuntosPorEquipo::getPrtidos_Perdidos(){
+int PuntosPorEquipo::getPartidos_Perdidos(){
 	return this->partidos_perdidos;
 }
 int PuntosPorEquipo::getPartidos_Empatados(){
 	return this->partidos_empatados;
 }
-void PuntosPorEquipo::getEquipo(Equipo* ppe_equipo){
+void PuntosPorEquipo::setEquipo(Equipo* ppe_equipo){
 	this->equipo=ppe_equipo;
 }
-void PuntosPorEquipo::getGoles_Favor(int ppe_goles_favor){
+void PuntosPorEquipo::setGoles_Favor(int ppe_goles_favor){
 	this->goles_favor=ppe_goles_favor;
 }
-void PuntosPorEquipo::getGoles_Contra(int ppe_goles_contra){
+void PuntosPorEquipo::setGoles_Contra(int ppe_goles_contra){
 	this->goles_contra=ppe_goles_contra;
 }
-void PuntosPorEquipo::getPartidos_Ganados(int ppe_partidos_ganados){
+void PuntosPorEquipo::setPartidos_Ganados(int ppe_partidos_ganados){
 	this->partidos_ganados=ppe_partidos_ganados;
 }
-void PuntosPorEquipo::getPrtidos_Perdidos(int ppe_partidos_perdidos){
+void PuntosPorEquipo::setPartidos_Perdidos(int ppe_partidos_perdidos){
 	this->partidos_perdidos=ppe_partidos_perdidos;
 }
-void PuntosPorEquipo::getPartidos_Empatados(int ppe_partidos_empatados){
+void PuntosPorEquipo::setPartidos_Empatados(int ppe_partidos_empatados){
 	this->partidos_empatados=ppe_partidos_empatados;
 }

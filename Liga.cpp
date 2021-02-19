@@ -11,6 +11,12 @@ Liga::Liga(string l_nombre,vector<Equipo*> l_equipos,vector<Partido*> l_jornada,
 }
 
 Liga::~Liga(){
+	for(int i = 0; i<equipos.size();i++){
+		delete equipos.at(i);
+	}
+	for(int i = 0; i<jornada.size();i++){
+		delete jornada.at(i);
+	}
 }
 
 string Liga::getNombre(){
@@ -35,4 +41,18 @@ TablaPosiciones* Liga::getTabla_P(){
 
 void Liga::setTabla_P(TablaPosiciones* l_tabla_p){
   this->tabla_p = l_tabla_p;
+}
+void Liga::agregarEquipo(Equipo* _equipo){
+	equipos.push_back(_equipo);
+}
+void Liga::agregarJornada(Partido* _partido){
+	jornada.push_back(_partido);
+}
+void Liga::eliminarEquipo(int pos){
+	for(int i = 0;i<equipos.size();i++){
+		if(i==pos){
+			equipos.erase(equipos.begin()+pos);
+			delete equipos.at(i);
+		}
+	}
 }

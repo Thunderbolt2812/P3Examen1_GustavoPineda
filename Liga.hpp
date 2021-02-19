@@ -23,5 +23,8 @@ class Liga {
 	  TablaPosiciones* getTabla_P();
 	  void setNombre(string);
 	  void setTabla_P(TablaPosiciones*);
+	  void agregarEquipo(Equipo*);
+	  void agregarJornada(Partido*);
+	  void eliminarEquipo(int);
 };
 #endif

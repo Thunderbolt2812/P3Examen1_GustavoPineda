@@ -27,3 +27,4 @@ void Equipo::setSkill(int e_skill){
   this->skill = e_skill;
 }
 
+
